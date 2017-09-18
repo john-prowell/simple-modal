@@ -1,0 +1,121 @@
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    margin-top: 10px;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+header .btn {
+    background-color: cornflowerblue;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+    font-size: 1.2em;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    animation-name: modal;
+    animation-duration: 1s;    
+}
+
+.modal-container {
+    max-width: 50%;
+    margin: 20vh auto;
+    background-color: #fff;
+    box-shadow: 10px 10px 6px -6px black;
+}
+
+.modal-header {
+    background-color: cornflowerblue;
+    color: #fff;   
+    padding: 10px;
+    overflow: auto;
+}
+
+.modal-header h1 {
+    float: left;
+}
+
+.modal-header .closeBtn {
+    float: right;
+    font-weight: bold;
+    color: cornflowerblue;
+    background-color: #FFFFFF;
+    padding: 0 5px;
+    transition: all .3s;
+}
+
+.modal-header .closeBtn:hover {
+    background-color: #FF0000;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.modal-body, .modal-footer {
+    padding: 0 10px;
+}
+
+.modal-footer {
+    background-color: cornflowerblue;
+    color: #fff;
+}
+
+.modal-footer p {
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+@keyframes modal {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
